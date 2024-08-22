@@ -28,7 +28,7 @@ if not api_key:
 
 
 # Setting up the page configuration with title and icon
-st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
+st.set_page_config(page_title="SkyChat", page_icon="👽")
 
 
 
