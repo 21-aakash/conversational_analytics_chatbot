@@ -29,26 +29,74 @@ if not api_key:
 # Setting up the page configuration with title and icon
 st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
+# Adding custom CSS and HTML for UI enhancement
+st.markdown(
+    """
+    <style>
+    /* Background image for the entire app */
+    .stApp {
+        background-image: url('https://media.istockphoto.com/id/1186367786/photo/unidentified-flying-object-space-clipping-path.jpg?s=1024x1024&w=is&k=20&c=Tfz_pqeh0jyK7swOM3ngA_cGF0KjNKBt_P1V1KB19YA=');
+        background-size: contain;
+        background-position: center;
+       
+        color: white;
+       
+    }
 
-# CSS for background image
-page_bg_img = '''
-<style>
-.stApp {
-    background-image: url("back.jpg"); /* Update with your image path */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-</style>
-'''
+    /* Custom font for the title */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+    .main-title {
+        font-family: 'Roboto', sans-serif;
+        font-size: 3em;
+        color: white;
+        margin-top: 0;
+    }
 
-# df = pd.read_csv('reports.csv', encoding='ISO-8859-1')
-# st.write(df.head())
+    /* Custom font for the tagline */
+    .tagline {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5em;
+        color: #F0E68C;
+        margin-bottom: 30px;
+    }
 
+    /* Logo styling */
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+        height: 150px;
+    }
 
-# Apply the background image CSS
-st.markdown(page_bg_img, unsafe_allow_html=True)
+    /* Hover effect on the entire container */
+    .container:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
 
+    /* Make the input box have a transparent background */
+    .stTextInput input {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: 1px solid #F0E68C;
+    }
+
+    /* Modify chat input placeholder */
+    .stTextInput input::placeholder {
+        color: #F0E68C;
+    }
+
+    /* Adjust chat message bubbles */
+    .stMessage .stMessageContent {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    </style>
+    """, 
+    unsafe_allow_html=True
+)
 with st.popover("Open popover"):
     
     name = st.text_input("What's your name?")
