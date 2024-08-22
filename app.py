@@ -74,7 +74,7 @@ radio_opt = ["Use SQLite 3 Database - analytics_db"]
 
 
 # Initialize the Groq LLM
-llm = ChatGroq(groq_api_key=api_key, model_name="llama-3.1-70b-versatile", streaming=True)
+llm = ChatGroq(groq_api_key=api_key, model_name="gemma-7b-it", streaming=True)
 
 # Function to configure SQLite database
 @st.cache_resource(ttl="2h")
