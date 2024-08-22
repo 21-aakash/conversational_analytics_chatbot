@@ -136,69 +136,7 @@ with col2:
     st.title("Hey! My name is SkyChat 7.0.0 ")
 
 
-# Custom CSS for the button and other elements
-st.markdown(
-    """
-    <style>
-    .plus-button-container {
-        text-align: center;
-        margin: 20px 0;
-    }
-    
-    .plus-button {
-        font-size: 30px;
-        color: #FFFFFF;
-        background-color: #FF4D06;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .plus-button:hover {
-        background-color: #FF3300;
-        transform: scale(1.1);
-    }
-    
-    .query-input-box {
-        margin-top: 20px;
-        display: none;
-    }
-    
-    .visible {
-        display: block !important;
-    }
-    </style>
-    """, 
-    unsafe_allow_html=True
-)
 
-# Adding the plus button
-with st.container():
-    st.markdown("<div class='plus-button-container'><button id='plus-btn' class='plus-button'>+</button></div>", unsafe_allow_html=True)
-
-   
-
-# JavaScript to toggle the visibility of the input box when the plus button is clicked
-st.markdown(
-    """
-    <script>
-    document.getElementById('plus-btn').onclick = function() {
-        var queryBox = document.querySelector('.query-input-box');
-        if (queryBox.style.display === 'none' || queryBox.style.display === '') {
-            queryBox.style.display = 'block';
-        } else {
-            queryBox.style.display = 'none';
-        }
-    }
-    </script>
-    """, 
-    unsafe_allow_html=True
-)
 
 # Database connection options
 LOCALDB = "USE_LOCALDB"
