@@ -31,17 +31,16 @@ if not api_key:
 st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
 
-
-# HTML code for Lottie animation with a transparent background
+# HTML code for Lottie animation with a specified background color
 lottie_html = """
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player 
-    src="https://lottie.host/1404f925-c91d-4efa-b695-857a436b2a08/2Sbw0KZH5k.json" 
-    background="transparent" 
+    src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
+    background="#FF4D06" 
     speed="1" 
     style="width: 300px; height: 300px" 
     loop 
-    autoplay
+    autoplay 
     direction="1" 
     mode="normal">
 </lottie-player>
@@ -49,7 +48,6 @@ lottie_html = """
 
 # Display the Lottie animation
 components.html(lottie_html, height=300)
-
 
 # Adding custom CSS and HTML for UI enhancement
 st.markdown(
