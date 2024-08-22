@@ -232,14 +232,3 @@ if user_query:
 #         # ans = pd.DataFrame(response, columns=[f"Column {i}" for i in range(len(response[0]))])
 #         # st.dataframe(ans)
 # Implement the "Download History" button under the "Clear History" button
-if st.sidebar.button("Download message history"):
-    # Convert chat history to a downloadable format (e.g., plain text or CSV)
-    chat_history = "\n".join([f"{msg['role']}: {msg['content']}" for msg in st.session_state["messages"]])
-    
-    # Create a download link for the chat history
-    st.sidebar.download_button(
-        label="Download History",
-        data=chat_history,
-        file_name="chat_history.txt",
-        mime="text/plain"
-    )
