@@ -136,14 +136,10 @@ with col2:
     st.title("Hey! My name is SkyChat 7.0.0 ")
 
 
-
-
 # Database connection options
 LOCALDB = "USE_LOCALDB"
 
 radio_opt = ["Use SQLite 3 Database - analytics_db"]
-
-
 
 # Initialize the Groq LLM
 llm = ChatGroq(groq_api_key=api_key, model_name="gemma2-9b-it", streaming=True)
