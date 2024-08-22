@@ -33,19 +33,19 @@ st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
 
 
-# Lottie animation HTML
-lottie_html = """
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player 
-    src="https://lottie.host/13c40840-8a55-4f2d-83d6-d960a6262959/wncYvtB0i1.json" 
-    background="transparent" 
-    speed="1" 
-    style="width: 300px; height: 300px" 
-    loop 
-    controls 
-    autoplay>
-</lottie-player>
-"""
+# # Lottie animation HTML
+# lottie_html = """
+# <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+# <lottie-player 
+#     src="https://lottie.host/13c40840-8a55-4f2d-83d6-d960a6262959/wncYvtB0i1.json" 
+#     background="transparent" 
+#     speed="1" 
+#     style="width: 300px; height: 300px" 
+#     loop 
+#     controls 
+#     autoplay>
+# </lottie-player>
+# """
 
 # Display the Lottie animation in Streamlit
 components.html(lottie_html, height=300)
