@@ -35,7 +35,7 @@ st.markdown(
     <style>
     /* Background image for the entire app */
     .stApp {
-        background-image: url('https://media.istockphoto.com/id/1186367786/photo/unidentified-flying-object-space-clipping-path.jpg?s=1024x1024&w=is&k=20&c=Tfz_pqeh0jyK7swOM3ngA_cGF0KjNKBt_P1V1KB19YA=');
+        background-image: url('https://images.unsplash.com/photo-1601370690183-1c7796ecec61?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         background-size: contain;
         background-position: center;
        
