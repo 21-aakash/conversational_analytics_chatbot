@@ -35,7 +35,7 @@ st.markdown(
     <style>
     /* Background image for the entire app */
     .stApp {
-        background-image: url('http://7-themes.com/data_images/out/2/6771977-awesome-dark-green-wallpaper.jpg');
+        background-image: url('https://static.vecteezy.com/system/resources/thumbnails/033/351/457/small_2x/abstract-modern-blank-black-background-ai-generated-photo.jpg');
         background-size: contain;
         background-position: center;
        
