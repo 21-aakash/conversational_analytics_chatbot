@@ -107,7 +107,7 @@ with st.popover("Open popover"):
 
 st.write("Your name:", name)
 # Create two columns
-col1, col2 = st.columns([1, 4])  # Adjust the ratio as needed
+col1, col2 = st.columns([1, 8])  # Adjust the ratio as needed
 
 # Display the image in the first column
 with col1:
