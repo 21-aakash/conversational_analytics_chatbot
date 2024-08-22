@@ -12,7 +12,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from io import StringIO
-# import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -32,24 +32,23 @@ st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
 
 
+# HTML code for Lottie animation without controllers
+lottie_html = """
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player 
+    src="https://lottie.host/1404f925-c91d-4efa-b695-857a436b2a08/2Sbw0KZH5k.json" 
+    background="#FFFFFF" 
+    speed="1" 
+    style="width: 300px; height: 300px" 
+    loop 
+    autoplay
+    direction="1" 
+    mode="normal">
+</lottie-player>
+"""
 
-# # Lottie animation HTML
-# lottie_html = """
-# <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-# <lottie-player 
-#     src="https://lottie.host/13c40840-8a55-4f2d-83d6-d960a6262959/wncYvtB0i1.json" 
-#     background="transparent" 
-#     speed="1" 
-#     style="width: 300px; height: 300px" 
-#     loop 
-#     controls 
-#     autoplay>
-# </lottie-player>
-# """
-
-# # Display the Lottie animation in Streamlit
-# components.html(lottie_html, height=300)
-
+# Display the Lottie animation
+components.html(lottie_html, height=300)
 
 
 # Adding custom CSS and HTML for UI enhancement
