@@ -32,12 +32,12 @@ st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
 
 
-# HTML code for Lottie animation without controllers
+# HTML code for Lottie animation with a transparent background
 lottie_html = """
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player 
     src="https://lottie.host/1404f925-c91d-4efa-b695-857a436b2a08/2Sbw0KZH5k.json" 
-    background="#FFFFFF" 
+    background="transparent" 
     speed="1" 
     style="width: 300px; height: 300px" 
     loop 
