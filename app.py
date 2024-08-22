@@ -35,7 +35,7 @@ st.markdown(
     <style>
     /* Background image for the entire app */
     .stApp {
-        background-image: url('https://media.istockphoto.com/id/980941020/photo/unique-design-abstract-digital-pixel-noise-glitch-error-video-damage.jpg?s=2048x2048&w=is&k=20&c=RmZ9RikS-7sE-zXeSxJhsCix8D5APXSR73CWsIVJ7r8=');
+        background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
         background-size: contain;
         background-position: center;
        
