@@ -36,7 +36,7 @@ lottie_html = """
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <lottie-player 
     src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
-    background="#FF4D06" 
+    background="transparent"  
     speed="1" 
     style="width: 300px; height: 300px" 
     loop 
