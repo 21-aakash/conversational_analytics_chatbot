@@ -31,23 +31,7 @@ if not api_key:
 st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 
 
-# HTML code for Lottie animation with a specified background color
-lottie_html = """
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player 
-    src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
-    background="transparent"  
-    speed="1" 
-    style="width: 300px; height: 300px" 
-    loop 
-    autoplay 
-    direction="1" 
-    mode="normal">
-</lottie-player>
-"""
 
-# Display the Lottie animation
-components.html(lottie_html, height=300)
 
 # Adding custom CSS and HTML for UI enhancement
 st.markdown(
@@ -127,7 +111,23 @@ col1, col2 = st.columns([1, 4])  # Adjust the ratio as needed
 
 # Display the image in the first column
 with col1:
-    st.image("pic.png", width=120)
+    # HTML code for Lottie animation with a specified background color
+lottie_html = """
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player 
+    src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
+    background="transparent"  
+    speed="1" 
+    style="width: 300px; height: 300px" 
+    loop 
+    autoplay 
+    direction="1" 
+    mode="normal">
+</lottie-player>
+"""
+
+# Display the Lottie animation
+components.html(lottie_html, height=300)
 
 # Display the title in the second column
 with col2:
