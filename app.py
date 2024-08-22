@@ -111,10 +111,9 @@ col1, col2 = st.columns([1, 4])  # Adjust the ratio as needed
 
 # Display the image in the first column
 with col1:
-    # HTML code for Lottie animation with a specified background color
-lottie_html = """
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player 
+    lottie_html = """
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player 
     src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
     background="transparent"  
     speed="1" 
@@ -123,8 +122,11 @@ lottie_html = """
     autoplay 
     direction="1" 
     mode="normal">
-</lottie-player>
-"""
+    </lottie-player>
+    """
+    
+    # HTML code for Lottie animation with a specified background color
+
 
 # Display the Lottie animation
 components.html(lottie_html, height=300)
