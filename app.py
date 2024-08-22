@@ -129,7 +129,7 @@ with col1:
 
 
 # Display the Lottie animation
-components.html(lottie_html, height=300)
+components.html(lottie_html, height=200)
 
 # Display the title in the second column
 with col2:
