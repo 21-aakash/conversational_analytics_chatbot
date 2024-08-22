@@ -106,10 +106,11 @@ with st.popover("Open popover"):
     name = st.text_input("What's your name?")
 
 st.write("Your name:", name)
+
 # Create two columns
 col1, col2 = st.columns([1, 8])  # Adjust the ratio as needed
 
-# Display the image in the first column
+# Display the Lottie animation in the first column
 with col1:
     lottie_html = """
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -124,12 +125,7 @@ with col1:
     mode="normal">
     </lottie-player>
     """
-    
-    # HTML code for Lottie animation with a specified background color
-
-
-# Display the Lottie animation
-components.html(lottie_html, height=300)
+    components.html(lottie_html, height=300)
 
 # Display the title in the second column
 with col2:
