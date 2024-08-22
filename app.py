@@ -39,7 +39,7 @@ st.markdown(
     <style>
     /* Background image for the entire app */
     .stApp {
-        background-image: url('https://img.freepik.com/free-vector/black-background-with-focus-spot-light_1017-27230.jpg?w=996&t=st=1724351347~exp=1724351947~hmac=c8b9f033f7ff68e3aa890a07b95e0ab740ba4238ffda83077539e31cb816e8ad');
+        background-image: url('https://img.freepik.com/free-vector/gradient-technology-futuristic-background_23-2149115555.jpg');
         background-size: contain;
         background-position: center;
        
