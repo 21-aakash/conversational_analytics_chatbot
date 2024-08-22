@@ -157,7 +157,16 @@ def configure_db():
 
 # Configure DB
 db = configure_db()
+# Display the first few rows from the ANALYTICS_DATA table
+st.subheader("Preview of ANALYTICS_DATA Table")
 
+# Query to select the first few rows from the table
+query = text("SELECT * FROM ANALYTICS_DATA LIMIT 5")
+result = db.run(query)
+
+# Convert the result to a pandas DataFrame for display
+df = pd.DataFrame(result, columns=result.keys())
+st.dataframe(df)
 # SQL toolkit
 toolkit = SQLDatabaseToolkit(db=db, llm=llm)  # Directly pass llm object
 
