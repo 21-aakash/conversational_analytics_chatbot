@@ -226,7 +226,20 @@ if user_query:
 #         data = StringIO(response)  # Convert the string to a file-like object
 #         df = pd.read_csv(data)     # Read the file-like object into a DataFrame
 
+
 # # Display the DataFrame in a table format using Streamlit
 #         st.dataframe(df)
 #         # ans = pd.DataFrame(response, columns=[f"Column {i}" for i in range(len(response[0]))])
 #         # st.dataframe(ans)
+# Implement the "Download History" button under the "Clear History" button
+if st.sidebar.button("Download message history"):
+    # Convert chat history to a downloadable format (e.g., plain text or CSV)
+    chat_history = "\n".join([f"{msg['role']}: {msg['content']}" for msg in st.session_state["messages"]])
+    
+    # Create a download link for the chat history
+    st.sidebar.download_button(
+        label="Download History",
+        data=chat_history,
+        file_name="chat_history.txt",
+        mime="text/plain"
+    )
