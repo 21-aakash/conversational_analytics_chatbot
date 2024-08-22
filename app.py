@@ -12,7 +12,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from io import StringIO
-import streamlit.components.v1 as components
+# import streamlit.components.v1 as components
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -47,8 +47,8 @@ st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 # </lottie-player>
 # """
 
-# Display the Lottie animation in Streamlit
-components.html(lottie_html, height=300)
+# # Display the Lottie animation in Streamlit
+# components.html(lottie_html, height=300)
 
 
 
