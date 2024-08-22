@@ -12,6 +12,7 @@ import pandas as pd
 import os
 from dotenv import load_dotenv
 from io import StringIO
+import streamlit.components.v1 as components
 
 # Load environment variables from the .env file
 load_dotenv()
@@ -28,6 +29,28 @@ if not api_key:
 
 # Setting up the page configuration with title and icon
 st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
+
+
+
+
+# Lottie animation HTML
+lottie_html = """
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player 
+    src="https://lottie.host/13c40840-8a55-4f2d-83d6-d960a6262959/wncYvtB0i1.json" 
+    background="transparent" 
+    speed="1" 
+    style="width: 300px; height: 300px" 
+    loop 
+    controls 
+    autoplay>
+</lottie-player>
+"""
+
+# Display the Lottie animation in Streamlit
+components.html(lottie_html, height=300)
+
+
 
 # Adding custom CSS and HTML for UI enhancement
 st.markdown(
