@@ -146,7 +146,7 @@ if user_query:
     with st.chat_message("assistant"):
         streamlit_callback = StreamlitCallbackHandler(st.container())
         # Run the agent with the user's query, capturing the output and displaying it
-        response = agent.run(user_query )
+        response = agent.run(user_query,callbacks=[streamlit_callback] )
         # Add the assistant's response to the message history
         st.session_state["messages"].append({"role": "assistant", "content": response})
         # Display the assistant's response
