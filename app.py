@@ -35,7 +35,7 @@ st.markdown(
     <style>
     /* Background image for the entire app */
     .stApp {
-        background-image: url('https://images.pexels.com/photos/808510/pexels-photo-808510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-image: url('https://www.hdwallpapers.in/thumbs/2021/green_plant_pot_black_background_dark_theme_hd_dark_theme-t2.jpg');
         background-size: contain;
         background-position: center;
        
