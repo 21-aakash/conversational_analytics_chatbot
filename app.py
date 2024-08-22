@@ -170,27 +170,7 @@ agent = create_sql_agent(
 if "messages" not in st.session_state or st.sidebar.button("Clear message history"):
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
 
-st.sidebar(
-    lottie_html = """
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player 
-    src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
-    background="transparent"  
-    speed="1.5" 
-    style="width: 300px; height: 300px" 
-    loop 
-    autoplay 
-    direction="1" 
-    mode="normal">
-    </lottie-player>
-    """
-    
-    # HTML code for Lottie animation with a specified background color
 
-
-# Display the Lottie animation
-components.html(lottie_html, height=300)
-)
 # Display chat history messages
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
