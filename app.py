@@ -33,7 +33,7 @@ st.set_page_config(page_title="LangChain: Chat with SQL DB", page_icon="👽")
 # CSS for background image
 page_bg_img = '''
 <style>
-#root {
+.stApp {
     background-image: url("back.jpg"); /* Update with your image path */
     background-size: cover;
     background-position: center;
@@ -94,7 +94,8 @@ agent = create_sql_agent(
     llm=llm,  # Pass llm directly
     toolkit=toolkit,
     verbose=True,
-    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION
+    agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+    handle_parsing_errors=True
 )
 
 # Session state for messages (clear button available)
