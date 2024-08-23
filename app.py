@@ -116,7 +116,7 @@ with col1:
     <lottie-player 
     src="https://lottie.host/4cc8d37b-9414-4d10-9e99-178ca1a7f662/tIMrpKEmVd.json" 
     background="transparent"  
-    speed="1.5" 
+    speed="3" 
     style="width: 300px; height: 300px" 
     loop 
     autoplay 
