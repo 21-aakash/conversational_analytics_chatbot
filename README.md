@@ -34,5 +34,31 @@ Ensure you have the following installed on your system:
 Replace your_mysql_host, your_mysql_user, your_mysql_password, and your_database_name with your actual MySQL credentials.
 
 5.**Use Streamlit to run the application.**
-   ```bash
-    streamlit run app.py
+      ```bash
+        streamlit run app.py
+
+
+####  Algorithm
+
+1. Import necessary libraries and load environment variables.
+2. Set up Streamlit page configuration (title, icon).
+3. Define a function to configure the SQLite database connection:
+   a. Use sqlite3 to connect to a read-only database.
+   b. Cache the connection for performance optimization.
+4. Initialize the Groq language model using API key and model parameters.
+5. Create a SQL database toolkit with the database connection and LLM.
+6. Set up a SQL agent with:
+   a. The LLM instance.
+   b. The toolkit.
+   c. Additional configurations (verbose mode, agent type).
+7. Initialize session state for chat history.
+8. Display all previous chat messages.
+9. Provide an input box for user queries.
+10. If a user submits a query:
+    a. Add the query to chat history.
+    b. Display the query in the chat interface.
+    c. Process the query using the agent.
+    d. Capture and display the agent's response.
+    e. Append the response to chat history.
+11. Wait for further user input to continue the interaction loop.
+
