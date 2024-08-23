@@ -5,6 +5,7 @@ This Streamlit application allows users to interact with a MySQL database using 
 
 ## Deployed Link
 - [SQL Chat Using LangChain](https://conversationalanalyticschatbot.streamlit.app/)
+- [Algorithm Charts](https://docs.google.com/document/d/1FsQtduvAO54mPr5JvraIjTKfA9unPg1opfGcFczeJJ4/edit?addon_store)
 
 ## Getting Started
 
